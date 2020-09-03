@@ -90,7 +90,7 @@
             remove (task){
                 axios.delete('/api/tasks/${task.id}')
                     .then((res)=> {
-                       const taskIndex = this.tasks.indexOf(task); 
+                       const taskIndex = this.tasks.indexOf(task);
                         this.tasks.splice(taskIndex, 1)
                     })
                     .catch((err) => {
